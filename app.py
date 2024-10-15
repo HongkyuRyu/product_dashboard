@@ -2,7 +2,9 @@ import dash
 from dash import dcc, html, Input, Output, dash_table
 import pandas as pd
 import plotly.express as px
+import logging
 
+logging.info("실행중")
 # 데이터 읽어오기
 file_path = 'MES9월마감데이터.xlsx'
 sheet_name = '9월 마감내역서 통합'
@@ -10,6 +12,8 @@ sheet_name = '9월 마감내역서 통합'
 df = pd.read_excel(file_path, sheet_name=sheet_name)
 
 app = dash.Dash(__name__, suppress_callback_exceptions=True)
+
+# TODO: 코드 분할, 파일 분할.
 
 
 ###############################
@@ -39,7 +43,10 @@ Excel테이블에 내가 Case라는 컬럼이름으로 0 ~ 14까지 에러코드
 ###########################
 
 app.layout = html.Div([
+
+    # 제목
     html.H1("다산팩 9월 마감 대시보드", style={"align-items": 'justify-center'}),
+
     # TODO: 9월 공정 마감 현황 테이블 + 그래프
     html.Div([
         html.Div([
