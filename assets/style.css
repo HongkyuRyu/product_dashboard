@@ -1,0 +1,80 @@
+전체 레이아웃 스타일 body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 20px 20px;
+  background-color: #f9f9f9;
+}
+
+/* 다산팩 9월 마감 대시보드 타이틀 스타일 */
+h1 {
+  color: white;
+  background-color: #ff8800;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 36px;
+  margin: 20px auto;
+  width: 100%; /* 중앙 정렬을 위한 넓이 설정 */
+}
+
+/* 공정 필터 */
+.dropdown select {
+  width: 200px;
+  font-size: 16px;
+  background-color: #ffe4b5;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.dropdown select:hover {
+  background-color: #ffd700; /* 옅은 주황색으로 hover 효과 */
+}
+
+/* 테이블 스타일 */
+.data-table {
+  width: 100%;
+  margin-top: 30px;
+  overflow-x: auto;
+}
+
+.data-table th,
+.data-table td {
+  text-align: center;
+  font-size: 16px;
+}
+
+.data-table th {
+  background-color: #ffcc99;
+  font-weight: bold;
+}
+
+.data-table td {
+  background-color: #fff;
+}
+
+.data-table td:nth-child(2) {
+  text-align: right; /* 숫자는 오른쪽 정렬 */
+}
+
+/* H3 제목 스타일 */
+h3 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* LOT NO 검색 input 스타일 */
+input[type="text"] {
+  margin-inline: 20px;
+  width: 500px;
+  font-size: 16px;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 30px;
+}
+
+/* 결과 테이블 스타일 */
+#search-result {
+  margin-top: 20px;
+}
